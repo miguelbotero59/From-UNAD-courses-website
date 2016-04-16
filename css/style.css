@@ -1,0 +1,281 @@
+/*font-family: 'Shadows Into Light', cursive;
+ font-family: 'Indie Flower', cursive;
+*/
+
+#contenidos{
+	width: 880px;
+	height: auto;
+	margin-left: 220px;
+	position: relative;
+	
+
+}
+
+
+/*ETIQUETAS*/
+body{
+background: #f1f1f1;
+background-repeat: no-repeat;
+background-size: cover;
+height: 10px;
+}
+
+h1{
+font-family: 'Cherry Swash', cursive;
+color: black;
+margin-left: -50px;
+margin-top: 30px;
+font-size: 60px;
+text-align: center; 
+}
+
+h2{
+font-family: 'Righteous', cursive;
+color: white;
+margin-left: 10px;
+font-size: 20px;
+text-align: left; 
+}
+
+h3{
+font-family: 'Cherry Swash', cursive;;
+color: black;
+font-size: 13px;
+text-align: center; 
+}
+
+
+header{
+	width: 1000px;
+	height: 100px;
+	background: rgba(255, 255, 255, 10,70);
+}
+
+nav{
+    /*Bordes redondeados*/
+    -webkit-border-radius:10px;/*Para chrome y Safari*/
+    -moz-border-radius:10px;/*Para Firefox*/
+    -o-border-radius:10px;/*Para Opera*/
+    border-radius:10px;/*El estandar por defecto*/
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#CCC));/*Para chrome y Safari*/
+    /*Degradados*/
+    background-image: -moz-linear-gradient(top center, #FFF, #CCC);/*Para Firefox*/
+    background-image: -o-linear-gradient(top, #FFF, #CCC);/*Para Opera*/
+    background-image: linear-gradient(top, #FFF, #CCC);/*El estandar por defecto*/
+    overflow:hidden;
+    padding:10px;
+    margin-left: -60px;
+    width:1005px;
+
+}
+nav ul{
+    list-style:none;
+    margin:0 10px 0 10px;
+    padding:0;
+}
+
+nav ul li{
+    /*Bordes redondeados*/
+    -webkit-border-radius:5px;/*Chrome y Safari*/
+    -moz-border-radius:5px;/*Firefox*/
+    -o-border-radius:5px;/*Opera*/
+    border-radius:5px;/*Estandar por defecto*/
+    float:left;
+    font-family: 'Cherry Swash', cursive;
+    font-size:16px;
+    font-weight:normal;
+    margin-right:10px;
+    text-align:center;
+    /*Sombras para texto, los mismos parametros que box-shadow*/
+    text-shadow: 0px 1px 0px #FFF;
+}
+
+nav ul li:hover{
+    /*Degradado de fondo*/
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#FFF), to( #E3E3E3));/*Chrome y Safari*/
+    background-image: -moz-linear-gradient(top center, #FFF, #E3E3E3);/*Firefox*/
+    background-image: -o-linear-gradient(top, #FFF, #E3E3E3);/*Opera*/
+    background-image: linear-gradient(top, #FFF, #E3E3E3);/*Estandar por defecto*/
+    /*Sombras*/
+    -webkit-box-shadow:  1px -1px 0px #999;/*Chrome y Safari*/
+    -moz-box-shadow:  1px -1px 0px #999;/*Firefox*/
+    -o-box-shadow:  1px -1px 0px #999;/*Opera*/
+    box-shadow:  1px -1px 0px #999;/*Estandar por defecto*/
+    border:1px solid #E3E3E3;
+}
+
+nav ul li a{
+    color:white;
+    display:block;
+    padding:10px;
+    text-decoration:none;
+    /*Transiciones*/
+    -webkit-transition: 0.4s linear all;
+    -moz-transition: 0.4s linear all;
+    -o-transition: 0.4s linear all;
+    transition: 0.4s linear all;
+}
+nav ul li a:hover {
+    color:#000;
+}
+
+ul{
+margin: auto;
+padding-top: 4px;
+}
+
+li{
+	float: left;
+	list-style-type: none;
+	padding: 10px;
+	background: gray;
+	margin: 3px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px white inset; 
+
+}
+
+figure{
+margin-top: -230px;
+margin-left: -250px;
+left: 50%;
+top: 50%;
+position: absolute;
+}
+
+section{
+	width: 900px;
+	background: #f1f1f1;
+	height: 300px;
+	float: left;
+	margin-top: 350px;
+	border-radius: 10px;
+}
+
+
+
+
+
+.caja-redes {
+   margin-left: 300px;
+    padding: 15px;
+    position: relative;
+    width: 400px;
+}
+.caja-redes a {
+    text-align: center;
+    font-size: 20px;
+}
+
+.icon-button {
+    background-color: white;
+    border-radius: 3em;
+    cursor: pointer;
+    display: inline-block;
+    height: 3em;
+    line-height: 3em;
+    margin: 0 8px;
+    position: relative;
+    width: 3em;
+}
+
+.icon-button span {
+    border-radius: 0;
+    display: block;
+    height: 0;
+    left: 50%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    width: 0;
+}
+.icon-button:hover span {
+    width: 3em;
+    height: 3em;
+    border-radius: 3em;
+    margin: -1.5em;
+}
+.twitter span {
+    background-color: #4099ff;
+}
+.facebook span {
+    background-color: #3B5998;
+}
+.google-plus span {
+    background-color: #db5a3c;
+}
+
+.icon-button i {
+    background: none;
+    color: white;
+    left: 0;
+    line-height: 3em;
+    position: absolute;
+    top: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    width: 3em;
+    z-index: 2;
+}
+.icon-button .icon-twitter {
+    color: #4099ff;
+}
+.icon-button .icon-facebook {
+    color: #3B5998;
+}
+.icon-button .icon-google-plus {
+    color: #db5a3c;
+}
+.icon-button:hover .icon-linkedin, .icon-button:hover .icon-pinterest, .icon-button:hover .icon-twitter, .icon-button:hover .icon-facebook, .icon-button:hover .icon-google-plus {
+    color: white;
+}
+
+
+footer{
+width: 880px;
+height: 40px;
+background: #f1f1f1;
+float: left;
+margin-top: 20px;
+border-radius: 10px;
+}
+
+p{
+    color: black;
+    font-family: 'Cherry Swash', cursive; 
+	font-size: 20px;
+	font-weight: bolder;
+	line-height: 24px;
+	padding: 10px;
+    margin-bottom: -20px;
+	text-align: justify;
+}
+
+
+/*CLASES*/
+
+
+/*SEUDO CLASES*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

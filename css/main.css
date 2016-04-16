@@ -1,0 +1,306 @@
+*, *:after, *:before { 
+
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box; 
+}
+body, html { 
+	font-size: 100%; 
+	padding: 0; margin: 0;
+}
+
+
+body {
+	font-family: Arial, sans-serif;
+	color: #aaaeb2;
+	background: #f1f1f1;
+}
+
+a {
+	color: #888;
+	text-decoration: none;
+}
+h2{
+font-family: 'Cherry Swash', cursive;
+color: black;
+margin-left: 0px;
+font-size: 60px;
+text-align: center; 
+}
+/*  Opcion para ser responsive */
+
+@media screen and (max-width: 31.5em) {
+	.contnedor {
+		padding: 10px 10px 50px 10px;
+	}
+	.contnedor li {
+		width: 100%;
+		min-width: 300px;
+	}
+}
+@media screen and (max-width: 25em) {
+
+	.np-icon span {
+		display: none;
+	}
+
+}
+
+
+
+.contnedor {
+	padding: 20px 20px 100px 20px;
+	max-width: 1200px;
+	margin-right: 35px;
+	list-style: none;
+	text-align: center;
+}
+
+.contnedor li {
+	display: inline-block;
+	width: 363px;
+	margin: 0;
+	padding: 20px;
+	text-align: left;
+	position: relative;
+}
+
+
+.contnedor figure {
+	margin: 0;
+	position: relative;
+}
+
+.contnedor figure img {
+	max-width: 100%;
+	display: block;
+	position: relative;
+}
+
+
+.contnedor figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 20px;
+	background: #666666;
+	color: #ed4e6e;
+}
+
+
+figcaption span {
+    color: #DDDDDD;
+    display: block;
+    font-size: 11px;
+    margin: 12px 0;
+}
+
+.contnedor figcaption h3 {
+    border-bottom: 1px solid #777777;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0 0 5px;
+}
+
+
+.contnedor figcaption a {
+	text-align: center;
+	padding: 5px 10px;
+	border-radius: 2px;
+	display: inline-block;
+	background: #31a7c4;
+	color: #fff;
+
+}
+
+
+/* Caption animación*/
+
+
+.caption li {
+	-webkit-perspective: 1800px;
+	-moz-perspective: 1800px;
+	perspective: 1800px;
+	-webkit-perspective-origin: 0 50%;
+	-moz-perspective-origin: 0 0%;
+	perspective-origin: 0 0%;
+}
+
+.caption figure {
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+.caption figure > div {
+	overflow: hidden;
+}
+
+.caption figure img {
+	-webkit-transition: -webkit-transform 0.3s ease-out;
+	-moz-transition: -moz-transform 0.3s ease-out;
+	transition: transform 0.3s ease-out;
+}
+
+.caption figure:hover img
+{
+	-webkit-transform: translateX(23%);
+	-moz-transform: translateX(23%);
+	-ms-transform: translateX(23%);
+	transform: translateX(23%);
+	cursor: pointer;
+}
+
+
+
+.caption figcaption {
+	height: 100%;
+	width: 50%;
+	opacity: 0;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform-origin: 0 0;
+	-moz-transform-origin: 0 0;
+	transform-origin: 0 0;
+	-webkit-transform: rotateY(-90deg);
+	-moz-transform: rotateY(-90deg);
+	transform: rotateY(-90deg);
+	-webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
+	-moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
+	transition: transform 0.4s, opacity 0.1s 0.3s;
+}
+
+
+.caption figure:hover figcaption{
+	opacity: 1;
+	-webkit-transform: rotateY(0deg);
+	-moz-transform: rotateY(0deg);
+	transform: rotateY(0deg);
+	-webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
+	-moz-transition: -moz-transform 0.4s, opacity 0.1s;
+	transition: transform 0.4s, opacity 0.1s;
+}
+
+
+
+.caption figcaption a {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+
+
+
+.btn_hover:hover {
+	background: #3fc7e8;
+    -webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+}
+
+nav{
+    /*Bordes redondeados*/
+    -webkit-border-radius:10px;/*Para chrome y Safari*/
+    -moz-border-radius:10px;/*Para Firefox*/
+    -o-border-radius:10px;/*Para Opera*/
+    border-radius:10px;/*El estandar por defecto*/
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#CCC));/*Para chrome y Safari*/
+    /*Degradados*/
+    background-image: -moz-linear-gradient(top center, #FFF, #CCC);/*Para Firefox*/
+    background-image: -o-linear-gradient(top, #FFF, #CCC);/*Para Opera*/
+    background-image: linear-gradient(top, #FFF, #CCC);/*El estandar por defecto*/
+    overflow:hidden;
+    padding:10px;
+    margin-left: 155px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    width:1050px;
+
+}
+
+nav ul{
+    list-style:none;
+    margin-right: 0px;
+    margin-left: 28px;
+    padding:0;
+}
+
+nav ul li{
+    /*Bordes redondeados*/
+    -webkit-border-radius:5px;/*Chrome y Safari*/
+    -moz-border-radius:5px;/*Firefox*/
+    -o-border-radius:5px;/*Opera*/
+    border-radius:5px;/*Estandar por defecto*/
+    float:left;
+    font-family: 'Cherry Swash', cursive;
+    font-size:16px;
+    font-weight:normal;
+    margin-right:10px;
+    text-align:center;
+    /*Sombras para texto, los mismos parametros que box-shadow*/
+    text-shadow: 0px 1px 0px #FFF;
+}
+
+nav ul li:hover{
+    /*Degradado de fondo*/
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#FFF), to( #E3E3E3));/*Chrome y Safari*/
+    background-image: -moz-linear-gradient(top center, #FFF, #E3E3E3);/*Firefox*/
+    background-image: -o-linear-gradient(top, #FFF, #E3E3E3);/*Opera*/
+    background-image: linear-gradient(top, #FFF, #E3E3E3);/*Estandar por defecto*/
+    /*Sombras*/
+    -webkit-box-shadow:  1px -1px 0px #999;/*Chrome y Safari*/
+    -moz-box-shadow:  1px -1px 0px #999;/*Firefox*/
+    -o-box-shadow:  1px -1px 0px #999;/*Opera*/
+    box-shadow:  1px -1px 0px #999;/*Estandar por defecto*/
+    border:1px solid #E3E3E3;
+}
+
+nav ul li a{
+    color:white;
+    display:block;
+    padding:10px;
+    text-decoration:none;
+    /*Transiciones*/
+    -webkit-transition: 0.4s linear all;
+    -moz-transition: 0.4s linear all;
+    -o-transition: 0.4s linear all;
+    transition: 0.4s linear all;
+}
+nav ul li a:hover {
+    color:#000;
+}
+
+ul{
+margin: auto;
+padding-top: 4px;
+}
+
+li{
+	float: left;
+	list-style-type: none;
+	padding: 10px;
+	background: gray;
+	margin: 3px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px white inset; 
+}
+
+h4{
+font-family: 'Cherry Swash', cursive;;
+color: black;
+font-size: 13px;
+text-align: center; 
+}	
+
+footer{
+width: 880px;
+height: 40px;
+background: #f1f1f1;
+float: left;
+margin-left: 220px;
+margin-top: 20px;
+border-radius: 10px;
+margin-bottom: 20px;
+}
+
